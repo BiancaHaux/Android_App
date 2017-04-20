@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.biancahaux.optimapp.CreateProfile">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            android:background="@drawable/background">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_gravity="top"
+                android:background="@drawable/button">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000"
+                    android:layout_gravity="bottom"
+                    android:textColor= "@color/primaryDark"
+                    android:textStyle="bold"
+                    android:elevation="@dimen/abc_action_bar_default_height_material"
+                    android:textSize="16dp"
+                    android:id="@+id/btnLogin"
+                    android:text="LOGIN"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_gravity="top"
+                android:background="@drawable/button">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80999999"
+                    android:layout_gravity="bottom"
+                    android:enabled="false"
+                    android:textColor="@color/primaryDark"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="CREATE PROFILE"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            android:background="@drawable/background">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editName"
+                android:hint="Name"
+                android:textColorHint="@color/primaryTransparent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:id="@+id/editPassword"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/primaryTransparent"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80999999"
+                android:textColor="@color/primaryDark"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:text="Create Profile"
+                android:id="@+id/btnActuallyCreateProfile"
+                android:layout_gravity="center"
+                android:padding="6dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</GridLayout>

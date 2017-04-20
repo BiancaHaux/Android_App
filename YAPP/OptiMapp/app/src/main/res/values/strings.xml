@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OptiMapp</string>
+    <string name="title_activity_dashboard">OptiMapp</string>
+    <string name="name_hint">name</string>
+    <string name="btnProfile">My Profile</string>
+    <string name="btnCalendar">My Profile</string>
+    <string name="btnMedication">My Profile</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_medication">Medication</string>
+    <string name="title_activity_opti_mapp">OptiMapp</string>
+    <string name="tvTitle">Title</string>
+    <string name="tvDescription">Description</string>
+    <string name="title_activity_notification">title_activity_notification</string>
+</resources>

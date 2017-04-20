@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLight">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event title"
+        android:textColorHint="@color/primaryTransparent"
+        android:layout_margin="10dp"
+        android:id="@+id/tvEventTitle" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Event date"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:id="@+id/tvEventDate" />
+
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:amPmTextColor="@color/primary"
+        android:numbersTextColor="@color/primary"
+        android:numbersBackgroundColor="@color/primaryTransparent"
+        android:numbersSelectorColor="@color/primary"
+        android:amPmBackgroundColor="@color/primaryTransparent"
+        android:timePickerMode="spinner" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Describe your event"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:id="@+id/tvEventDescription" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify me for this event!"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:id="@+id/cbNotify" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Event"
+        android:id="@+id/tvCreateEvent"
+        android:layout_weight="0.5"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:background="@color/primaryTransparent"
+        android:textSize="16dp"
+        android:layout_gravity="left"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:background="@color/primaryTransparent"
+        android:textSize="16dp"
+        android:id="@+id/tvAbortEvent"
+        android:layout_weight="0.5"
+        android:layout_gravity="right"/>
+    </LinearLayout>
+</LinearLayout>

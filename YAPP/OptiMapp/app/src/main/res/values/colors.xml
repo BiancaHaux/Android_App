@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textWhite">#F5F5F5</color>
+    <color name="primaryLight">#b2bfc2</color>
+    <color name="primary">#002a36</color>
+    <color name="primaryDark">#001c24</color>
+    <color name="primaryTransparent">#4D001c24</color>
+    <color name="event">#099c0c</color>
+</resources>

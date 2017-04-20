@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.biancahaux.optimapp.Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/primaryLight"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/primary"
+                android:id="@+id/tvProfileName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes:"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/primary"
+                android:id="@+id/tvProfileNotes" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                android:id="@+id/etProfileNotes"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:hint="Notes"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="10"
+                android:textColorHint="@color/primaryTransparent"
+                android:textColor="@color/primary"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/primary"
+                android:id="@+id/tvProfileAge" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:hint="Your age"
+                android:textColorHint="@color/primaryTransparent"
+                android:textColor="@color/primary"
+                android:id="@+id/etProfileAge" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allergies:"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/primary"
+                android:id="@+id/tvProfileAllergies" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/etProfileAllergies"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:hint="Allergies"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="10"
+                android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                android:textColorHint="@color/primaryTransparent"
+                android:textColor="@color/primary"
+                android:layout_gravity="center_horizontal" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you smoke?"
+                android:id="@+id/cbSmoker"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:textColor="@color/primary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pre-existing conditions:"
+                android:textSize="@dimen/abc_text_size_title_material"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/primary"
+                android:id="@+id/tvPreConditions" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/etPreConditions"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="10dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="10"
+                android:hint="Write down your pre-existing conditions here."
+                android:textSize="@dimen/abc_text_size_subtitle_material_toolbar"
+                android:textColorHint="@color/primaryTransparent"
+                android:textColor="@color/primary"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:textColor="@color/textWhite"
+                android:background="@color/primary"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:textSize="12dp"
+                android:layout_margin="30dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/btnDeleteAccount" />
+
+        </LinearLayout>
+    </ScrollView>
+</GridLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLight">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:id="@+id/tvMedTitle" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:ems="10"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:numeric="decimal"
+        android:id="@+id/tvMedQuantity" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Details"
+        android:textColorHint="@color/primaryTransparent"
+        android:textColor="@color/primary"
+        android:layout_margin="10dp"
+        android:id="@+id/editMedDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textColorHint="@color/primaryTransparent"
+            android:textColor="@color/primary"
+            android:layout_margin="10dp"
+            android:background="@color/primaryTransparent"
+            android:textSize="16dp"
+            android:id="@+id/medCreateEvent"
+            android:layout_weight="0.5"
+            android:layout_gravity="left"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColorHint="@color/primaryTransparent"
+            android:textColor="@color/primary"
+            android:layout_margin="10dp"
+            android:background="@color/primaryTransparent"
+            android:textSize="16dp"
+            android:id="@+id/medAbortEvent"
+            android:layout_weight="0.5"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>
